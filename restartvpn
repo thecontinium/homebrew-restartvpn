@@ -1,0 +1,16 @@
+#!/bin/bash
+# restartvpn
+
+
+# If this runs immediately serveradmin returns an error and the script doesn't work so sleep some first
+sleep 60
+
+# Stop the VPN
+/Applications/Server.app/Contents/ServerRoot/usr/sbin/serveradmin stop vpn
+echo Sleep until things settle down
+sleep 180
+
+# Now start it back up
+echo Restarting VPN
+/Applications/Server.app/Contents/ServerRoot/usr/sbin/serveradmin start vpn
+echo VPN restart complete
