@@ -1,7 +1,7 @@
 class RestartVpn< Formula
   homepage 'https://github.com/thecontinium/homebrew-restartvpn/'
   url 'https://github.com/thecontinium/homebrew-restartvpn.git'
-  version '0.0.2'
+  version '0.0.3'
 
   skip_clean 'bin'
 
@@ -23,7 +23,7 @@ class RestartVpn< Formula
       <string>#{plist_name}</string>
     	<key>ProgramArguments</key>
 	    <array>
-		    <string>/usr/local/bin/resartvpn</string>
+		    <string>/usr/local/bin/restartvpn</string>
 	    </array>
 	    <key>StandardErrorPath</key>
       <string>/tmp/#{plist_name}.err</string>
