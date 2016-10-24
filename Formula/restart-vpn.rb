@@ -1,13 +1,13 @@
 class RestartVpn< Formula
   homepage 'https://github.com/thecontinium/homebrew-restartvpn/'
   url 'https://github.com/thecontinium/homebrew-restartvpn.git'
-  version '0.0.1'
+  version '0.0.2'
 
   skip_clean 'bin'
 
 
   def install
-    bin.install 'restartvpn]'
+    bin.install 'restartvpn'
   end
 
   #plist_options :startup => true
